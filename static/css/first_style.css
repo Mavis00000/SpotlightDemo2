@@ -1,0 +1,129 @@
+@font-face {
+  font-family: jf-font;
+  src: url(../ttf/jf-openhuninn-1.1.ttf);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #00011F;
+  font-family: jf-font;
+}
+
+
+#container {
+  filter: blur(0px);
+  transition: 1s;
+}
+
+a {
+  color: white;
+  text-decoration:none;
+}
+
+a.visited {
+  color: white;
+}
+
+.menu {
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 1, 31, 0.7);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 500;
+  padding: 50px 100px;
+  color: white;
+  list-style: none;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transition-delay: 0.2s;
+}
+.menu.active {
+  pointer-events: initial;
+  opacity: 1;
+  background-color: rgba(0, 1, 31, 0.6);
+}
+.menu li {
+  font-size: 60px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.menu li:hover {
+  color: rgb(227, 60, 169);;
+}
+
+#container.blur {
+  filter: blur(30px);
+}
+
+canvas {
+  mix-blend-mode: screen;
+}
+
+h1 {
+  z-index: 100;
+  color: white;
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.logo {
+  width: 250px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+
+canvas {
+  display: block;
+}
+
+.fixed {
+  position: fixed;
+  top: 34%;
+  left: 50px;
+  z-index: 100;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.explore {
+  border: solid 1px rgb(227, 60, 169);
+  display: inline-block;
+  border-radius: 200px;
+  padding: 8px 20px;
+  border-width: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.explore:hover {
+  background-color: rgb(227, 60, 169);
+  color: white;
+}
